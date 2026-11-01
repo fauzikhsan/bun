@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2 · Daftar</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="app">
+
+  <div class="topbar">
+    <a class="icon-btn" href="activate.html" aria-label="Kembali">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </a>
+    <span class="topbar__title">Langkah 1 dari 2</span>
+    <span style="width:48px" aria-hidden="true"></span>
+  </div>
+
+  <div class="steps" aria-hidden="true"><i class="on"></i><i></i></div>
+
+  <div class="stack" style="gap:6px; position:relative">
+    <h1 class="title">Kenalan dulu, yuk</h1>
+    <p class="sub">Data ini yang dilihat pasanganmu setelah pin kalian tersambung.</p>
+    <span class="deco heart beat" style="width:26px; top:0; right:4px; transform:rotate(12deg)"></span>
+  </div>
+
+  <div class="upload">
+    <div class="blob">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></svg>
+    </div>
+    <button class="icon-btn" type="button" aria-label="Unggah foto profil">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h3l1.6-2.4h6.8L17 8h3v11H4z"/><circle cx="12" cy="13" r="3.4"/></svg>
+    </button>
+  </div>
+
+  <form class="stack" action="pair.html">
+
+    <div class="field">
+      <label for="nama">Nama panggilan</label>
+      <input class="input" id="nama" name="nama" type="text" value="Raka" autocomplete="nickname">
+    </div>
+
+    <div class="field">
+      <label for="hp">Nomor HP</label>
+      <input class="input" id="hp" name="hp" type="tel" value="0812 3456 7890" autocomplete="tel">
+    </div>
+
+    <div class="field">
+      <label for="jadian">Tanggal jadian</label>
+      <input class="input" id="jadian" name="jadian" type="date" value="2025-09-15">
+    </div>
+
+    <fieldset class="field" style="border:0; padding:0; margin:0">
+      <legend class="label" style="padding:0; margin-bottom:8px">Zona waktu untuk streak</legend>
+      <div class="seg">
+        <label><input type="radio" name="tz" value="wib" checked><span>WIB</span></label>
+        <label><input type="radio" name="tz" value="wita"><span>WITA</span></label>
+        <label><input type="radio" name="tz" value="wit"><span>WIT</span></label>
+      </div>
+      <p class="small">Menentukan kapan hari baru dimulai. Kalau kalian beda zona, pilih satu acuan bersama.</p>
+    </fieldset>
+
+    <button class="btn" type="submit" style="margin-top:6px">Lanjut</button>
+  </form>
+
+</main>
+</body>
+</html>

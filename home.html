@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4 · Beranda</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="app">
+
+  <div class="topbar">
+    <span class="brand">[nama produk]</span>
+    <div class="row" style="gap:0">
+      <div class="blob blob--sun" style="--s:40px">R</div>
+      <div class="blob blob--b blob--sky" style="--s:40px; margin-left:-10px">N</div>
+    </div>
+  </div>
+
+  <!-- Hari ke-N -->
+  <section class="card stack" style="align-items:center; text-align:center; gap:10px; position:relative">
+    <span class="deco heart beat" style="width:28px; top:14px; left:14px; transform:rotate(-14deg)"></span>
+    <span class="deco heart" style="width:18px; top:26px; right:18px; transform:rotate(12deg)"></span>
+    <span class="eyebrow">Kalian sudah bersama</span>
+    <div class="row" style="align-items:baseline; gap:10px">
+      <span class="big-num hero-num">413</span>
+      <span class="h2">hari</span>
+    </div>
+    <div class="pair">
+      <div class="blob blob--sun" style="--s:52px">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></svg>
+      </div>
+      <div class="heart-badge"><span class="heart beat"></span></div>
+      <div class="blob blob--b blob--sky" style="--s:52px">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+      </div>
+    </div>
+    <p class="sub">Raka &amp; Nara · sejak 15 September 2025</p>
+  </section>
+
+  <!-- Streak -->
+  <section class="card card--sun stack" style="gap:18px">
+    <div class="row">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2 1-3 2-4 .3 1.2 1 2 2 2 0-3-.5-5 1-8z"/></svg>
+      <h2 class="h2" style="font-size:20px">Streak kalian</h2>
+    </div>
+
+    <div class="row between" style="align-items:center; gap:12px">
+      <div>
+        <div class="big-num streak-num">27</div>
+        <div style="font-weight:700">hari beruntun</div>
+      </div>
+      <div class="stack" style="gap:12px; width:172px">
+        <div class="status">
+          <div class="blob blob--sun" style="--s:38px; background:var(--white)">R</div>
+          <div>Sudah tap<small>00:01 WIB</small></div>
+          <svg class="icon tick" viewBox="0 0 24 24" aria-label="Selesai"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+        </div>
+        <div class="status">
+          <div class="blob blob--b blob--sky" style="--s:38px">N</div>
+          <div>Belum tap<small>menunggu Nara</small></div>
+          <svg class="icon tick" viewBox="0 0 24 24" aria-label="Menunggu"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="stack" style="gap:8px">
+      <div class="row between">
+        <span style="font-weight:700; font-size:14px">Sisa waktu menjaga streak</span>
+        <span style="font-weight:800">19 j 31 m</span>
+      </div>
+      <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="18" aria-label="Waktu hari ini yang sudah berjalan"><i style="width:18%"></i></div>
+      <p class="small" style="color:var(--ink)">Hari baru mulai pukul 00:00 WIB. Kalian berdua harus tap.</p>
+    </div>
+
+    <div class="days">
+      <div class="day"><span class="dot dot--on"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Sel</div>
+      <div class="day"><span class="dot dot--on"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Rab</div>
+      <div class="day"><span class="dot dot--on"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Kam</div>
+      <div class="day"><span class="dot dot--on"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Jum</div>
+      <div class="day"><span class="dot dot--on"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Sab</div>
+      <div class="day"><span class="dot dot--on"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Min</div>
+      <div class="day"><span class="dot dot--today"><span class="heart beat" style="width:16px"></span></span>Hari ini</div>
+    </div>
+
+    <div class="row" style="background:var(--white); border:var(--bd); border-radius:16px; padding:12px 14px; align-items:flex-start">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" style="flex:none"><path d="M12 3l7 3v5.5c0 4.5-3 7.8-7 9.5-4-1.7-7-5-7-9.5V6z"/></svg>
+      <span style="font-size:14px; font-weight:600">Streak freeze tersisa 1 bulan ini. Otomatis menyelamatkan satu hari yang terlewat.</span>
+    </div>
+  </section>
+
+  <!-- Countdown -->
+  <section class="stack" style="gap:12px">
+    <div class="tiles">
+      <div class="card card--lime tile">
+        <span class="eyebrow">Bulanan ke-14</span>
+        <div class="big-num">13</div>
+        <span class="unit">hari lagi</span>
+        <p class="small" style="color:var(--ink); margin-top:4px">15 Nov 2026</p>
+      </div>
+      <div class="card card--sky tile">
+        <span class="eyebrow">Tahun ke-2</span>
+        <div class="big-num">317</div>
+        <span class="unit">hari lagi</span>
+        <p class="small" style="color:var(--ink); margin-top:4px">15 Sep 2027</p>
+      </div>
+    </div>
+    <div class="card row between" style="padding:14px 16px">
+      <strong>Hari ke-500</strong>
+      <span class="small" style="color:var(--ink); font-weight:600">87 hari lagi · 28 Jan 2027</span>
+    </div>
+  </section>
+
+  <!-- Momen minggu ini -->
+  <div class="section-head">
+    <h2 class="h2">Momen minggu ini</h2>
+    <span class="small">Tutup Min, 8 Nov</span>
+  </div>
+  <div class="tiles">
+    <div class="photo-tile photo-tile--mine">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><circle cx="9" cy="10" r="1.6"/><path d="M4 17l5-4.5 4 3.5 3-2.5 4 3.5"/></svg>
+      <span>Fotomu</span>
+      <span class="small" style="color:var(--ink)">sudah terunggah</span>
+      <span class="badge"><svg class="icon" viewBox="0 0 24 24" aria-label="Terunggah"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+    </div>
+    <div class="photo-tile photo-tile--locked">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+      <span>Foto Nara</span>
+      <span class="small">belum masuk, terkunci</span>
+    </div>
+  </div>
+  <p class="small">Satu foto per minggu. Keduanya terbuka bersamaan setelah kalian berdua mengunggah.</p>
+
+  <!-- Cerita -->
+  <div class="section-head">
+    <h2 class="h2">Cerita kita</h2>
+    <span class="small">1 dari 3 bab</span>
+  </div>
+  <section class="card card--pink stack" style="gap:14px">
+    <div>
+      <span class="eyebrow">Bab 1</span>
+      <h3 class="h2" style="margin-top:2px">Pertama kali ketemu</h3>
+    </div>
+    <div class="stack" style="gap:10px; font-weight:700; font-size:15px">
+      <div class="row"><span class="dot-status"></span> Versimu <span class="small" style="margin-left:auto">belum ditulis</span></div>
+      <div class="row"><span class="dot-status dot-status--done"></span> Versi Nara <span class="small" style="margin-left:auto">sudah menulis, terkunci</span></div>
+    </div>
+    <a class="btn" href="story.html">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1-4L16.5 4.5a2 2 0 0 1 3 3L8 19z"/></svg>
+      Tulis versimu
+    </a>
+  </section>
+
+  <div class="card card--dashed chapter-locked">
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+    <div><strong>Bab 2 · Pertama kali jalan berdua</strong><span class="small">Terbuka di streak ke-30 · 3 hari lagi</span></div>
+  </div>
+  <div class="card card--dashed chapter-locked">
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+    <div><strong>Bab 3 · Saat aku yakin sama kamu</strong><span class="small">Terbuka di streak ke-100</span></div>
+  </div>
+
+</main>
+</body>
+</html>

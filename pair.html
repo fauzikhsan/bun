@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3 · Pairing</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="app tabs-scope">
+
+  <div class="topbar">
+    <a class="icon-btn" href="register.html" aria-label="Kembali">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </a>
+    <span class="topbar__title">Langkah 2 dari 2</span>
+    <span style="width:48px" aria-hidden="true"></span>
+  </div>
+
+  <div class="steps" aria-hidden="true"><i class="on"></i><i class="on"></i></div>
+
+  <div class="stack" style="gap:6px">
+    <h1 class="title">Sambungkan dengan pasanganmu</h1>
+    <p class="sub">Salah satu membuat kode, yang lain memasukkannya. Begitu cocok, kedua pin langsung terhubung.</p>
+  </div>
+
+  <div class="pair" role="img" aria-label="Kamu terhubung dengan pasanganmu">
+    <div class="blob blob--sun" style="--s:72px">R</div>
+    <div class="heart-badge"><span class="heart beat"></span></div>
+    <div class="blob blob--b blob--empty" style="--s:72px">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+    </div>
+  </div>
+
+  <div class="seg" role="radiogroup" aria-label="Cara pairing">
+    <label><input type="radio" name="tab" id="tab-buat" checked><span>Buat kode</span></label>
+    <label><input type="radio" name="tab" id="tab-masuk"><span>Masukkan kode</span></label>
+  </div>
+
+  <!-- Panel: Buat kode -->
+  <section class="panel panel--buat">
+    <div class="card card--sun stack" style="align-items:center; gap:14px">
+      <span class="eyebrow">Kode pairing kamu</span>
+      <div class="code code--filled" aria-label="Kode K 7 4 X 9 Q">
+        <span>K</span><span>7</span><span>4</span><span>X</span><span>9</span><span>Q</span>
+      </div>
+      <span class="small" style="color:var(--ink)">Berlaku 24 jam · sekali pakai</span>
+      <button class="btn btn--white btn--sm" type="button">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a9 9 0 0 1-13.4 7.8L3 21l1.3-4.4A9 9 0 1 1 21 12z"/></svg>
+        Bagikan lewat WhatsApp
+      </button>
+    </div>
+    <p class="center small" style="display:flex; align-items:center; justify-content:center; gap:8px">
+      <span class="heart beat" style="width:16px"></span> Menunggu pasanganmu memasukkan kode
+    </p>
+  </section>
+
+  <!-- Panel: Masukkan kode -->
+  <section class="panel panel--masuk">
+    <div class="card stack" style="gap:14px">
+      <label class="label" for="c1">Kode dari pasanganmu</label>
+      <div class="code">
+        <input id="c1" maxlength="1" inputmode="text" autocapitalize="characters" aria-label="Karakter 1">
+        <input maxlength="1" inputmode="text" autocapitalize="characters" aria-label="Karakter 2">
+        <input maxlength="1" inputmode="text" autocapitalize="characters" aria-label="Karakter 3">
+        <input maxlength="1" inputmode="text" autocapitalize="characters" aria-label="Karakter 4">
+        <input maxlength="1" inputmode="text" autocapitalize="characters" aria-label="Karakter 5">
+        <input maxlength="1" inputmode="text" autocapitalize="characters" aria-label="Karakter 6">
+      </div>
+      <p class="small center">Kode terdiri dari 6 huruf atau angka.</p>
+    </div>
+    <a class="btn" href="home.html">Hubungkan</a>
+  </section>
+
+  <div class="grow"></div>
+
+</main>
+</body>
+</html>
